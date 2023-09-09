@@ -1,0 +1,223 @@
+*{
+   
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: (0, 0%, 95%);
+    
+}
+/*Desktop*/
+@media (min-width:376px) {
+    .main{
+        width: 850px;
+        height: 465px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        align-self: center;
+        left: 20%;
+        top: 20%;
+        border-radius: 15px;
+    }
+    h2{
+        font-family: 'Big Shoulders Display', cursive;
+        margin-top: 120px;
+        margin-left: 45px;
+        font-weight: 700;
+        font-size: 45px;
+        color: hsl(0, 0%, 95%);
+    }
+    p{
+        margin-top: 40px;
+        margin-left: 45px;
+        color: hsla(0, 0%, 100%, 0.75);
+        display: flex;
+        flex-wrap: wrap;
+        
+    
+    }
+    
+    .learn{
+        margin-top: 80px;
+        margin-left: 45px;
+        background-color: hsl(0, 0%, 95%);
+        height: 45px;
+        width: 135px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        text-transform: capitalize;
+    }
+    .avatar{
+        position: absolute;
+        margin-left: 45px;
+        margin-top: 45px;
+    
+    }
+    .sedan .learn:hover{
+        background-color:hsl(31, 77%, 52%);
+        cursor: pointer;
+        border: 2px hsl(0, 0%, 95%) solid ;
+        color: hsl(0, 0%, 95%);
+    }
+    .suv .learn:hover{
+        background-color:hsl(184, 100%, 22%);
+        cursor: pointer;
+        color: hsl(0, 0%, 95%);
+        border: 2px hsl(0, 0%, 95%) solid ;
+    }
+    .luxury .learn:hover{
+        background-color: hsl(179, 100%, 13%);
+        cursor: pointer;
+        color: hsl(0, 0%, 95%);
+        border: 2px hsl(0, 0%, 95%) solid ;
+    
+    }
+    .sedan{
+        background-color: hsl(31, 77%, 52%);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .sedan .learn{
+        color: hsl(31, 77%, 52%);
+    }
+    .sedan p{
+        margin-right: 24px;
+    }
+    .suv p{
+        margin-right: 21px;
+    }
+    .luxury p{
+         margin-right: 17px;
+        
+    }
+    
+    .suv{
+        background-color: hsl(184, 100%, 22%);
+    }
+    .suv .learn{
+        color: hsl(184, 100%, 22%);
+    }
+    .luxury{
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .luxury .learn{
+        color: hsl(179, 100%, 13%);
+    }    
+}
+
+/*Mobile*/
+@media (max-width:376px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        height: 1000px;
+        margin: 0;
+        padding: 0;
+    }
+    .main{
+        background-color: aqua;
+        margin: 50px 15px ;
+        border-radius: 15px;
+        height: calc(100% - 50px) ;
+        display: flex;
+        flex-flow: column wrap;
+        /* position: absolute; */
+    }
+    .sedan{
+        background-color: hsl(31, 77%, 52%);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 100%;
+        flex: 1 0 auto;
+    }
+    .suv{
+        background-color: hsl(184, 100%, 22%);
+        flex: 1 0 auto;
+    }
+    .luxury{
+        background-color: hsl(179, 100%, 13%);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        flex: 1 0 auto;
+    }
+    h2{
+        font-family: 'Big Shoulders Display', cursive;
+        margin-top: 60px;
+        margin-left: 25px;
+        font-weight: 700;
+        font-size: 45px;
+        color: hsl(0, 0%, 95%);
+        position: relative;
+    
+    }
+    p{
+        margin-top: 20px;
+        margin-left: 25px;
+        color: hsla(0, 0%, 100%, 0.75);
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        
+    }
+
+    .learn{
+        margin-top: 15px;
+        margin-left: 25px;
+        background-color: hsl(0, 0%, 95%);
+        height: 55px;
+        width: 125px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        text-transform: capitalize;
+    }
+
+.avatar{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.sedan .learn{
+    color: hsl(31, 77%, 52%);
+}
+.sedan p{
+    margin-right: 24px;
+}
+.suv p{
+    margin-right: 21px;
+}
+.luxury p{
+    margin-right: 17px;
+    
+}
+.suv .learn{
+    color: hsl(184, 100%, 22%);
+}
+.luxury .learn{
+    color: hsl(179, 100%, 13%);
+}
+
+
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
